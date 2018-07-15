@@ -6,7 +6,9 @@
 
 const _constants = {
   allowedParams: ['category', 'country'],
-  ttl: 1000 * 60 * 60
+  ttl: 1000 * 10 * 60,
+  newsUrl : 'https://newsapi.org/v2/top-headlines',
+  checkperiod : 60 * 60
 };
 
 class Constants {
@@ -15,7 +17,7 @@ class Constants {
   }
 }
 
-exports.default = Constants.constants;
+exports.constants = Constants.constants;
 
 
 if (require.main === module) {

@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "start": "node ./bin/start",
-    "test": "mocha --recursive './test/*Test.js' --compilers js:babel-core/register"
+    "test": "mocha --recursive './test/*Test.js' --compilers js:babel-core/register --require babel-polyfill"
   },
   "dependencies": {
     "babel-core": "^6.25.0",
@@ -19,14 +19,18 @@
     "express": "^4.15.4",
     "lodash": "^4.17.10",
     "morgan": "^1.8.2",
+    "node-cache": "^4.2.0",
+    "node-exceptions": "^3.0.0",
     "node-sass-middleware": "^0.11.0",
     "pug": "^2.0.0-rc.3",
     "request": "^2.87.0",
     "request-promise": "^4.2.2",
-    "serve-favicon": "^2.4.3"
+    "serve-favicon": "^2.4.3",
+    "validator": "^10.4.0"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
+    "babel-polyfill": "^6.0.16",
     "chai": "^4.1.1",
     "chai-http": "^3.0.0",
     "eslint": "^4.5.0",
