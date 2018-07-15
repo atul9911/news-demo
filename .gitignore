@@ -4,12 +4,4 @@ node_modules
 # Environment variables, never commit this file
 .env
 
-# ESLint 
-.eslintrc
-
-# JSHint
-.jshintrc
-
-# Babel
-.babelrc
 
